@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body>
+
+<script language="javascript" type="text/javascript">
+    function say(){
+        var is_ok = true;
+        var age = 17;
+        var name = 'maroon';
+        var is_empty = null;
+        var is_empty_2;
+        console.log(is_ok);
+        console.log(age);
+        console.log(name);
+        console.log(is_empty);
+        console.log(is_empty_2);
+
+   
+
+        var hello = '<div class="alert alert-primary">';
+            hello = hello + '잘왔어요';
+            hello = hello + '</div>';
+
+        if(confirm('안녕한가요?')== false) {
+            hello = '<div class="alert alert-danger">';
+            hello = hello + '금지';
+            hello = hello + '</div>';
+
+        }
+
+        document.write(hello);
+        document.write('뷁');
+    }
+
+    say();
+
+</script>
+</body>
+</html>

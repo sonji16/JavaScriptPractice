@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>'1단부터 9단까지</h1>
+    
+    <div id="gugudan_result" style="background-color:paleturquoise; color:lightcoral">
+        구구단 결과가 보여지는 곳
+    </div> 
+
+<script>
+
+    //구구단을 함수 호출하여 찍기
+    function gugudan(){
+        console.log('구구단');
+        var result = '';
+
+        for(i = 1; i < 10; i++){
+            for(j = 1; j < 10; j++){
+                result = result + (i + 'x' + j + '=' + (i*j)+ '<br>');
+            }
+        }
+    
+        var obj = document.getElementById('gugudan_result');
+        obj.innerHTML = result;
+    }
+
+    gugudan();
+
+</script>
+
+</body>
+</html>

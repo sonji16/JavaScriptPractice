@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+
+    <div id="button_list">
+    </div>
+   
+    <img id='gallery' src=''>
+
+<script>
+    function init_button(){
+        var arr_img = ['barley', 'fantasy', 'nature', 'polynesia', 'sunset', 'winter'];
+        console.log(arr_img);
+
+        var html = '';
+
+        for(i = 0; i < arr_img.length; i++) {
+            var image_name = arr_img[i];
+
+            html = html + '<button type="button" onclick="javascript:change_img(\'' + image_name + '.jpg\');">' + image_name + '</button>'
+        }
+      
+        var button_list = document.getElementById('button_list');
+        button_list.innerHTML = html;
+
+    }
+
+    init_button();
+
+    function change_img(filename){
+
+        var obj_gallery = document.getElementById('gallery');
+        obj_gallery.src = ('img/' + filename);
+    }
+
+
+</script>
+
+</body>
+</html>

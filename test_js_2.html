@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    //랜덤한 값 10개 받아서 홀짝 판단해주기
+function decision(num) {
+    result = num + '';
+
+    if(num % 2 == 0) {
+        result = num + '은 짝수다'
+    }else {
+        result = num + '은 홀수다'
+    }
+
+    return result;
+}
+
+document.write(decision(6) + '<br>');
+document.write(decision(7) + '<br>');
+
+
+//0~100까지의 정수 중 10개 랜덤으로 뽑아 홀짝 판별하기
+for(i = 0; i < 10; i++){
+    var ran = Math.round(Math.random() * 100);
+    document.write((i + 1) + '번째 시도: ' + decision(ran) + '<br>' )
+}
+
+
+//구구단 찍어보기
+
+
+</script>
+
+</body>
+</html>
